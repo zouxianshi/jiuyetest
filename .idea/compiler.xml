@@ -10,7 +10,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="jiuyetest" target="8" />
+      <module name="jiuyetest" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jiuyetest" options="-extdirs E:\user\ZOUXIANSHI\Documents\GitHub\jiuyetest/src/main/webapp/WEB-INF/lib" />
+    </option>
   </component>
 </project>

@@ -29,8 +29,8 @@ public class Calculation {
 
     //计算重复数字
     public void repeat(long number) {
-        int i = 0, m = 1, p = 0;
         long n;
+        int i = 0, m = 1, p = 0;
         ArrayList<Long> list = new ArrayList<>();//阶乘结果
         ArrayList<Long> repeat = new ArrayList<>();//重复
         ArrayList<Long> temp = new ArrayList<>();//临时

@@ -6,7 +6,6 @@ public class Calculation {
     //计算阶乘
     public void factorial(int n) {
         if (n < 0) {
-
             System.out.println("非法输入");
             return;
         }

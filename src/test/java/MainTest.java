@@ -9,7 +9,6 @@ public class MainTest {
         calculation.factorial(0);
         calculation.factorial(20);
         calculation.factorial(21);
-
     }
 
     @Test

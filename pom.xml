@@ -57,9 +57,9 @@
                     <destFile>target/coverage-reports/jacoco-unit.exec</destFile>
                     <dataFile>target/coverage-reports/jacoco-unit.exec</dataFile>
                     <includes>
-                        <include>**/service/**</include>
-                        <include>**/controller/**</include>
-                        <!--<include>**/service/impl/*.class</include>-->
+                        <include>**/com.test/**</include>
+                        <!-- 表示只测试controller的代码-->
+                        <!--  <include>**/controller/**</include>-->
                     </includes>
                     <!-- rules里面指定覆盖规则 -->
                     <rules>
@@ -105,7 +105,7 @@
                     <!--这个report:对代码进行检测，然后生成index.html在 target/site/index.html中可以查看检测的详细结果-->
                     <execution>
                         <id>jacoco-site</id>
-                        <phase>package</phase>
+                        <phase>test</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>

@@ -1,16 +1,18 @@
 package store.Entity;
 
-public class phone {
+import java.io.Serializable;
+
+public class Phone implements Serializable {
     private String color;
     private String model;
     private int size;
     private float price;
 
-    public phone() {
+    public Phone() {
 
     }
 
-    public phone(String model, String color, int size, float price) {
+    public Phone(String model, String color, int size, float price) {
         this.model = model;
         this.color = color;
         this.price = price;

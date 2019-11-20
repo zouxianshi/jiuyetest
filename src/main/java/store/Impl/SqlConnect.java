@@ -1,25 +1,24 @@
 package store.Impl;
 
-import org.junit.Test;
+import store.Entity.Phone;
 
 import java.sql.*;
 
-public class sqlConnect {
+public class SqlConnect {
 
     // MySQL 8.0 以下版本 - JDBC 驱动名及数据库 URL
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/RUNOOB";
+    // static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    // static final String DB_URL = "jdbc:mysql://localhost:3306/store";
 
     // MySQL 8.0 以上版本 - JDBC 驱动名及数据库 URL
-//    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-//    static final String DB_URL = "jdbc:mysql://49.233.207.137:3306/RUNOOB?useSSL=false&serverTimezone=UTC";
+    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    static final String DB_URL = "jdbc:mysql://49.233.207.137:3306/store?useSSL=false&serverTimezone=UTC";
 
     // 数据库的用户名与密码，需要根据自己的设置
     static final String USER = "root";
     static final String PASS = "silvercrow@6133";
 
-    @Test
-    public static void main(String[] args) {
+    public static String sql(Phone phone) {
         Connection conn = null;
         Statement stmt = null;
         try {
@@ -72,6 +71,6 @@ public class sqlConnect {
                 se.printStackTrace();
             }
         }
-        System.out.println("Goodbye!");
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package store.Impl;
+package store.Sql;
 
 import store.Entity.Phone;
 
@@ -18,7 +18,7 @@ public class SqlConnect {
     static final String USER = "root";
     static final String PASS = "silvercrow@6133";
 
-    public static String sql(Phone phone) {
+    public String sql(Phone phone) {
         Connection conn = null;
         Statement stmt = null;
         try {

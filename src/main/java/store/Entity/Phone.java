@@ -5,19 +5,13 @@ import java.io.Serializable;
 public class Phone implements Serializable {
     private String color;
     private String model;
-    private int size;
+    private float size;
     private float price;
 
     public Phone() {
 
     }
 
-    public Phone(String model, String color, int size, float price) {
-        this.model = model;
-        this.color = color;
-        this.price = price;
-        this.size = size;
-    }
 
     public String getColor() {
         return color;
@@ -27,7 +21,7 @@ public class Phone implements Serializable {
         return price;
     }
 
-    public int getSize() {
+    public float getSize() {
         return size;
     }
 
